@@ -83,3 +83,14 @@ To tackle this problem, we utilize a combination of three key probabilistic data
 ### 4. **KLL Sketch**:
    - The **KLL Sketch** is used to calculate quantile distributions. It processes the output of the **Count-Min Sketch** to estimate the quantiles and provide useful statistics (e.g., percentiles, top-k items).
 
+## Reason for Choosing Technologies
+- **CLHash**: Provides memory-efficient hashing with a focus on frequency estimation. Ideal for scenarios where large datasets need to be processed quickly with minimal memory usage.
+
+- **Cuckoo Filter**: Offers low collision rates and efficient membership testing, making it a perfect fit for the task of checking if an event has already been encountered.
+
+- **Count-Min Sketch**: This structure is known for sub-linear space complexity and efficient frequency tracking, which is essential when processing millions of real-time events.
+
+- **KLL Sketch**: Provides an approximate quantile estimation without requiring the full dataset, making it well-suited for analyzing top-k or percentile data in large-scale systems.
+
+
+
