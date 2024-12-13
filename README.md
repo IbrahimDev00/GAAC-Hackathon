@@ -37,7 +37,7 @@ To tackle this problem, we utilize a combination of three key probabilistic data
 5. **Output**:  
    - The final output consists of **quantile estimates**, providing insights into the distribution of event frequencies.
 
-![Blank diagram (2)](https://github.com/user-attachments/assets/de599e01-ff55-465e-9a36-ca7f8fbaacc3)
+![Blank diagram (3)](https://github.com/user-attachments/assets/39adf796-48c6-4c53-81e4-143b9947c34c)
 
 ## Technology Stack
 
