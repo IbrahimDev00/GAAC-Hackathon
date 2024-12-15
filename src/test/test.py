@@ -1,8 +1,14 @@
 import random
 import string
 import time
-from cuckoo import CuckooFilter
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from countmin import CountMinSketch
+from cuckoo import CuckooFilter
+
 
 # Initialize filters
 cf = CuckooFilter(num_of_items=1000000, error_rate=0.1)
