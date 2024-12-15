@@ -41,9 +41,12 @@ def query_items(input_string: str):
     """
     if cf.lookup(input_string):
         frequency = cms.query(string_hash(input_string))
+        percentile = cms.calculate_percentile(input_string)
         print(f"{input_string} exists in the filter. Frequency: {frequency}")
+        print(f"Percentile: {percentile:.2f}%")
     else:
         print(f"{input_string} does not exist in the filter.")
+
 
 def main():
     # Running the test function from test.py
